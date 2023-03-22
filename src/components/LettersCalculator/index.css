@@ -1,0 +1,138 @@
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.input-card {
+  min-width: 250px;
+  width: 50%;
+}
+
+.input-body {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.label-el {
+  font-family: 'Roboto';
+  color: #e4e7eb;
+  font-weight: normal;
+}
+
+.input-el {
+  font-family: 'Roboto';
+  font-weight: normal;
+  border: 1px solid #e4e7eb;
+  height: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 3px;
+  outline: none;
+}
+
+.count-el {
+  min-height: 50px;
+  min-width: 220px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  outline: none;
+  font-family: 'Roboto';
+  color: #1d976c;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card {
+  min-width: 250px;
+  width: 45%;
+}
+
+.image {
+  min-height: 30px;
+  min-width: 250px;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .bg-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .input-card {
+    min-width: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-body {
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .label-el {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .input-el {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .count-el {
+    font-size: 18px;
+    max-width: 230px;
+    max-height: 55px;
+  }
+
+  .image-card {
+    width: 80%;
+    order: -1;
+  }
+
+  .image {
+    height: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .label-el {
+    font-size: 14px;
+  }
+
+  .input-el {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .count-el {
+    font-size: 20px;
+    max-width: 250px;
+    max-height: 60px;
+  }
+}
